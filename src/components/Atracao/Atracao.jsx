@@ -11,4 +11,4 @@ function Atracao() {
     );
 }
 
-export default Atracao
+export default Atracao;

@@ -1,14 +1,15 @@
 import './App.css'
+import CardAnimal from './components/CardAnimal/CardAnimal';
+import Navegacao from './components/Navegacao/Navegacao';
 import Home from './pages/Home/Home';
 
 function App() {
-   const components = [];
-   for(let i = 0; i <= 2; i++){
-    components.push(<Atracao key = {i} />)
-   }
+
   return (
     <>
      <Home/>
+     <Navegacao/>
+     <CardAnimal/>
     </>
   )
 }
