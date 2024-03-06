@@ -1,0 +1,15 @@
+.ctn-atracao {
+    background-color: #A7A000;
+    width: 20%;
+    height: 50vh;
+    border: 2px solid #555;
+}
+
+.ctn-atracao > img {
+    width: 50%;
+    height: 50%;
+}
+
+.ctn-atracao > p {
+    font-size: 2rem;
+}
