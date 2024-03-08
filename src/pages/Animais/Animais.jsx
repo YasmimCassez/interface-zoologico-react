@@ -3,11 +3,12 @@ import Navegacao from '../../components/Navegacao/Navegacao';
 import './Animais.css'
 
 function Animais() {
-    return
+    return(
     <>
-    <Navegacao/>
+        <Navegacao/>
     <CardAnimal/>
     </>
+    )
 }
 
 export default Animais;
