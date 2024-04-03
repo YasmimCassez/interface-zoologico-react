@@ -4,10 +4,13 @@ import './CardAnimal.css'
 function CardAnimal() {
     return (
         <>
-            <div className="ctn-cardanimal">
+        <div>
+        <div className="ctn-cardanimal">
                 <img src={imgNotFound} />
                 <p>Lorem Ipsum</p>
             </div>
+        </div>
+            
         </>
     );
 }

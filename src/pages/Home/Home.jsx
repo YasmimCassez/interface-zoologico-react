@@ -12,6 +12,7 @@ function Home() {
         <>
         <Navegacao></Navegacao>
         <Welcome></Welcome>
+        <h1 style={{color: 'black'}}>Atracao</h1>
       <div className="ctn-atracoes">
       {components}
       </div>

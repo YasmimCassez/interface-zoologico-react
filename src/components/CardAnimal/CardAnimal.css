@@ -1,5 +1,5 @@
 .ctn-cardanimal {
-    width: 25%;
+    width: 20%;
     height: 50vh;
 
     background-color: #A7A000;
@@ -9,11 +9,18 @@
     font-family: "Caesar Dressing", system-ui;
 }
 
-/* .ctn-atracao > img {
+.ctn-atracao > img {
     width: 50%;
     height: 50%;
-} */
+} 
 
 .ctn-cardanimal > p {
     font-size: 2rem;
+}
+
+.cnt-cardanimais{
+    background-color: #A7A000;
+    width: 20%;
+    height: 50vh;
+    border: 2px solid #555;
 }
