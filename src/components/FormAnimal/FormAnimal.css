@@ -1,0 +1,21 @@
+input {
+    background-color: white;
+    color: black;
+    width: 400px;
+}
+
+select{
+    width: 400px;
+}
+
+.cadastro {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 3%;
+}
+
+.descricao{
+    margin: 5px;
+    width: 400px;
+}
