@@ -1,22 +1,46 @@
-import CardAnimal from '../../components/CardAnimal/CardAnimal';
-import Navegacao from '../../components/Navegacao/Navegacao';
 import './Animais.css'
+import React, { useEffect, useState } from 'react';
+import CardAnimal from '../../components/CardAnimal/CardAnimal';
+import Navegar from '../../components/Navegacao/Navegacao';
 
 function Animais() {
-    const components = [];
-    for(let i = 0; i <= 3; i++){
-     components.push(<CardAnimal key = {i} />)
-    }
 
-    return(
-    <>
-    <Navegacao/>
-    <h1 style={{color: 'black'}}>Animais</h1>
-      <div className="ctn-cardanimais">
-      {components}
-    </div>
-    </>
-    )
+    // RECUPERANDO LISTA DE ANIMAIS DO SERVIDOR
+    const [animais, setAnimais] = useState(null);
+
+    // Recupera a lista de todos os animais do servidor
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch('http://localhost:3000/listar-todos');
+                if (!response.ok) {
+                    throw new Error('Erro ao buscar servidor');
+                }
+                const listaAnimais = await response.json();
+                setAnimais(listaAnimais);
+            } catch (error) {
+                console.error('Erro: ', error);
+            }
+        }
+
+        fetchData();
+    }, []);
+
+    return (
+        <>
+            <Navegar />
+            <div className='ctn-animais'>
+                {animais ? (
+                    // Renderize o seu componente para cada item da lista
+                    animais.map(animal => (
+                        <CardAnimal key={animal.idanimal} animal={animal} />
+                    ))
+                ) : (
+                    <p>Carregando...</p>
+                )}
+            </div>
+        </>
+    );
 }
 
 export default Animais;

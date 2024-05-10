@@ -1,11 +1,12 @@
 import './Depoimentos.css'
-import Navegacao from '../Navegacao/Navegacao';
+import Navegacao from '../../components/Navegacao/Navegacao';
+import Tabela from '../../components/Tabela/Tabela';
 
 function Depoimentos() {
     return (
         <>
         <Navegacao></Navegacao>
-        <p style={{color: 'black'}}>NADA AQUI AINDA</p>
+        <Tabela></Tabela>
         </>
     );
 }

@@ -1,5 +1,5 @@
 import './App.css'
-import AppRoutes from './routes';
+import AppRoutes from './assets/routes';
 
 function App() {
 
@@ -9,6 +9,5 @@ function App() {
     </>
   )
 }
-import AppRoutes from './routes';
 
 export default App;
