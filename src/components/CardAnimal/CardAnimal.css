@@ -1,16 +1,15 @@
 .card-animal {
-    width: 18%;
-    height: 50vh;
 
     margin: 2% 2%;
 
     background-color: #a8a67a;
 
     border: 2px solid #555;
-    border-radius: 10px;
+  
 
     font-family: "Caesar Dressing", system-ui;
 }
+
 
 .card-animal p {
     font-size: 1.5rem;

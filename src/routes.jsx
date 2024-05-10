@@ -1,8 +1,8 @@
-import Animais from '../pages/Animais/Animais';
-import Depoimentos from '../pages/Depoimentos/Depoimentos';
-import Fotos from '../pages/Fotos/Fotos';
-import Home from '../pages/Home/Home';
-import Login from '../pages/Login/Login';
+import Animais from './pages/Animais/Animais';
+import Depoimentos from './pages/Depoimentos/Depoimentos';
+import Fotos from './pages/Fotos/Fotos';
+import Home from './pages/Home/Home';
+import Login from './pages/Login/Login';
 import { BrowserRouter as Roteador, Routes, Route } from 'react-router-dom'
 
 
